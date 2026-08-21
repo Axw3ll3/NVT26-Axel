@@ -8,8 +8,8 @@ def main():
     model_2 = "CISCO2951"
     role_2 = "Router, lager 3"
     
-    device_3 = "SW-Nordvik-2"
-    model_3 = "WS-C3560-48TS"
+    device_3 = "SW-AxelStrid-2"
+    model_3 = "WS-C2960-24TT-L"
     role_3 = "Switch, access"
 
     print ("UTRUSTNINGSLISTA")
