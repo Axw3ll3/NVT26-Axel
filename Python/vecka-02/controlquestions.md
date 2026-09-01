@@ -39,10 +39,12 @@ Dynamic innebär att switchen lärt sig adressen själv. Static betyder att någ
 Exempel är trasig kabel, kabel sitter i fel port, enheten i andra änden är avstängd eller porten är avstängd.
 
 # 11 Några veckor senare ringer Anna igen. Här är ett utdrag ur MAC-tabellen. Hon har adressen a4c3.f011.3ab7 och når ingen alls, trots att hennes port är uppe. Vad är fel, och vilken port avslöjar det?
+<img width="537" height="110" alt="Screenshot 2026-09-01 154147" src="https://github.com/user-attachments/assets/4c767ca3-33af-4138-829c-a8b5024f2798" />
 
 Annas port ligger på VLAN 99 medan resterande ligger i VLAN 1. Kolumnen VLAN avslöjar detta. Detta då switchen lärt sig adressen, ramen kom fram till porten vilket betyder lager 1 funkar. Kabeln o porten är med detta uteslutna. Addressen finns men trafiken går inte fram vilket betyder ramen stoppas efter switchen tagit emot den, och VLAN är det som gör just det. 
 
 # 12 Här är ett utdrag ur 'show interfaces status'. Tre portar har trafik. En av dem kommer att fungera sämre än de andra. Vilken, och vad skulle du kontrollera härnäst?
+<img width="592" height="157" alt="Screenshot 2026-09-01 154151" src="https://github.com/user-attachments/assets/e78d761a-81e8-4523-bdc9-4eeea9c13367" />
 
 Port Gi0/2. Den kör a-half och 100 megabit, medan de andra kör a-full och a-1000. Bokstaven 'a' innan värdet betyder att switchen förhandlat fram det automatiskt. Att förhandlingen hamnade i halv duplex på en gigabitport innebär nästan alltid att motparten har ett fast värde inställt.
 Nästa steg är 'show interfaces Gi0/2' och räknarna. Stiger 'late collisions' har du en duplex missmatch. Då får man kontrollera båda ändarnas inställningar, inte bara switchens. Saknas 'a' helt är värdet istället fast inställt på switchen. 
