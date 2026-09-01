@@ -39,10 +39,12 @@ Brandväggen filtrerar trafiken som får pasera, inte bara vart den ska. Den hå
 Seriella porten ska ha 9600 i hastighet. Är det inte denna hastighet visas obegripliga tecken eller ingenting alls på skärmen.
 
 # 11 Här är ett utdrag ur 'show interfaces status'. En av portarna har en kabel i men kommer inte upp, och orsaken är inte kabeln. Vilken port, och vilket kommand skulle du köra härnäst?
+<img width="532" height="159" alt="Screenshot 2026-09-01 152306" src="https://github.com/user-attachments/assets/8bd9f7d1-46c7-4c21-840a-ac5ab3a0e9bc" />
 
 Port GI0/3. Den står som disabled, inte att den inte har någon anslutning. Leta efter raden shutdown efter du kört "show running-config interface GigabitEthernet0/3". Det som sägs är att porten är avstängd, inte att kabeln inte är ansluten. Felet ligger på lager 1. Då porten är 'disabled' försöker den inte ens kolla om kabeln är ansluten.
 
 # 12 En kurskamrat visar dig det här och säger switchen "inte tar emot kommandon". Vad har hänt, och vad säger du åt till hen att göra?
+<img width="560" height="84" alt="Screenshot 2026-09-01 152309" src="https://github.com/user-attachments/assets/59abf743-d31a-48b7-8396-2b890190026e" />
 
 Hen är i användarläget då prompten slutar på ">". Hostname kommandot finns endast i konfigurationsläget. Hen måste först köra enable och sedan configure terminal för att kunna konfigurera hostname.
 
