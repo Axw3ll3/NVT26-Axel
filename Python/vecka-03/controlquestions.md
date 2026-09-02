@@ -58,10 +58,13 @@ Trådlöst gäst nätet blir på 192.168.2.64/26, broadcast på 192.168.2.127 oc
 Drift nätet ligger på 192.168.2.192/26, broadcast på 192.168.2.255. Enheterna hamnar på adresserna mellan 192.168.2.193 och 192.168.2.254.
 
 # 14 Här är ett utdrag från en dator som inte kommer ut på nätet, men som når filservern på 192.168.1.10. Vad är fel?
+<img width="560" height="124" alt="Screenshot 2026-09-02 132017" src="https://github.com/user-attachments/assets/d154e729-f243-4883-9d92-9a127d24551a" />
 
 Gatewayen ligger i fel nät. Datorn har 192.168.1.42 med masken 255.255.255.192, alltså i /26. Datorns nät är 192.168.1.0/26 med adresserna 192.168.1.1 till 192.168.1.62. Gatewayen ligger på 192.168.1.65 vilket är utanför nätet. Rätt gateway adress är 192.168.1.1.
 
 # 15 Här är ett utdrag från routern. En student säger att DHCP inte fungerar, för hens dator får ingen adress. Vad frågar du härnäst?
+<img width="579" height="227" alt="Screenshot 2026-09-02 132022" src="https://github.com/user-attachments/assets/2cd8110e-3be2-4ba8-acae-ecdf002e231f" />
+
 
 Bara Gi0/0 har adress och är igång. De andra gigabitportarna är nere (administratively down). Sitter studenten i frågans dator bakom någon av gigaportarna som är nere når DHCP-frågan aldrig ett konfigurerat interface, och då får personen i fråga ingen adress hur rätt poolen än är. 
 
