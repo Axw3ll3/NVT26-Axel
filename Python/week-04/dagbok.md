@@ -1,0 +1,2 @@
+** Dag 1**
+Gjorde python koans kapitel 1-5 och skicka upp det till Git. Utöver det läste jag Målen, Varför spelar roll och Orden du behöver för kapitel 4 i boken samt skrev ner basen till Python koden.
