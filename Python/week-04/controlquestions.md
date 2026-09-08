@@ -95,11 +95,13 @@ Nej, en /26 räcker inte. Den ger 64 adresser, varav 62 går att använda: näta
 70 användbara adresser, alltså en /25 med 128 adresser och 126 användbara.
 
 # 14 Här är ett utdrag från två switchar som är hopkopplade.Datorer i VLAN 20 når inte varandra över trunken, men VLAN 10 fungerar. Vad är fel?
+<img width="559" height="174" alt="Screenshot 2026-09-08 135327" src="https://github.com/user-attachments/assets/1725d44a-d3ea-41db-8404-708dd9031210" />
 
 VLAN 20 saknas i allowed-listan på SW-Nordvik-1.
 Trunken bär bara 10, 30 och 99 från den sidan.
 
 # 15 Här är ett utdrag från en switch. En dator i port Gi0/5 får ingen adress från DHCP-servern, som sitter i VLAN 10. Vad frågar du efter härnäst?
+<img width="563" height="209" alt="Screenshot 2026-09-08 135344" src="https://github.com/user-attachments/assets/907fbd39-768f-4452-9110-8d687c42deea" />
 
 Fråga vilket VLAN porten ligger i. Gi0/5 står under
 VLAN1,inte under VLAN10där DHCP-servern finns.
