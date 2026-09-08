@@ -4,12 +4,10 @@ def vlan_config(number, name):
     rader.append(f"name: {name}")
     return rader
 
-vlans = {
-    10: "KONTOR",
-    20: "EKONOMI",
-    30: "GAST",
-    40: "DRIFT",
-    }
+vlans = {}
+for i in range(1, 41):
+    vlans[i] = f"NAT{i:02d}"
+    
 
 for number in vlans:
     for rad in vlan_config(number, vlans[number]):
